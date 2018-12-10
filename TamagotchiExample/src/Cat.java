@@ -40,36 +40,46 @@ public class Cat {
     }
 
     private void meow(){
-        System.out.println("Meow!");
+        System.out.println(this.name+ " says: Meow!");
     }
 
     public void drink(){
-        System.out.println("Mlask hlap hlap!");
+        System.out.println(this.name + " says: Mlask hlap hlap!");
         this.happy=true;
         this.meow();
     }
 
     public void eat() {
-        System.out.println("Mlask mlask!");
+        System.out.println(this.name + " says: Mlask mlask!");
         this.happy = true;
         this.hunger = false;
         this.meow();
     }
 
     public void play(){
-        System.out.println("I'm running and say: ");
+        double randHappines = Math.random();
+        double randHunger = Math.random();
+        this.happy = false;
+        this.hunger = false;
+        if(randHunger >= 0.5){
+            this.hunger = true;
+        }
+        if (randHappines >= 0.5) {
+            this.happy = true;
+        }
+        System.out.println(this.name + " is running and says... ");
         this.showMood();
     }
 
     private void showMood(){
         if(this.happy && !this.hunger){
-            System.out.println("Mrrrrrrrr");
+            System.out.println(this.name + " says: Mrrrrrrrr");
         }
         else if (this.happy && this.hunger) {
-            System.out.println("\"I love you but give me food!!!!\"");
+            System.out.println(this.name + " says: \"I love you but give me food!!!!\"");
         }
         else {
-            System.out.println("\" Don't touch me!!!!\"");
+            System.out.println(this.name + " says: \" Don't touch me!!!!\"");
         }
     }
     

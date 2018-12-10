@@ -26,7 +26,7 @@ public class Keeper {
             System.out.printf("Cat %s added to keeper %s \n", catName, this.name);
         }
         else {
-            System.out.println("I don't have space :( ");
+            System.out.printf("I don't have space :( I'll find %s better place :)\n", catName);
         }
         return catAdded;
     }

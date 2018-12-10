@@ -27,6 +27,17 @@
         },
         {
             "type": "java",
+            "name": "Debug (Launch)-Exercises<StringsSamples>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "Exercises",
+            "args": "",
+            "projectName": "StringsSamples"
+        },
+        {
+            "type": "java",
             "name": "Debug (Attach)",
             "request": "attach",
             "hostName": "localhost",

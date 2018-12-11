@@ -82,8 +82,4 @@ public class Cat {
             System.out.println(this.name + " says: \" Don't touch me!!!!\"");
         }
     }
-    
-    
-    
-
 }
